@@ -145,3 +145,23 @@ body.home-page::before { content:""; position:fixed; right:14px; bottom:12px; wi
 [data-theme='dark'] .home-page .venue, [data-theme='dark'] .home-page .venue-badge--conference { background:#49402a; color:#e0cfaa; border-color:#62573d; }
 @media(max-width:650px) { body.home-page::before { right:8px; bottom:8px; width:min(88vw, calc(35vw + 21vh)); opacity:.64; } .home-page h1, .home-page .page__title { font-size:1.75rem; } .home-page section>h2, .home-page .about-section-title { font-size:1.4rem; } }
 @media print { body.home-page::before { display:none; } }
+
+/* Give the profile card room for the institution name and wrap long links. */
+.home-page .sidebar > div[itemscope] { box-sizing:border-box; width:100%; }
+.home-page .author__urls li { white-space:normal; overflow-wrap:anywhere; }
+.home-page .author__urls a { position:relative; padding-left:1.65em; white-space:normal; overflow-wrap:anywhere; }
+.home-page .author__urls a > i { position:absolute; left:0; top:.35em; width:1.25em; text-align:center; }
+@media (min-width:1024px) {
+  .home-page #main { display:grid; grid-template-columns:280px minmax(0,1fr); column-gap:36px; align-items:start; }
+  .home-page #main::after { display:none; }
+  .home-page #main > .sidebar { float:none; width:auto; min-width:0; margin:0; }
+  .home-page #main > .archive { float:none; width:auto; min-width:0; margin:0; padding-left:0; }
+  .home-page .sidebar .author__urls-wrapper { width:100%; min-width:0; }
+}
+/* Match the wider card in the standalone local preview. */
+@media (min-width:951px) {
+  .home-page main { grid-template-columns:280px minmax(0,1fr); gap:36px; max-width:1260px; }
+}
+@media (min-width:651px) and (max-width:950px) {
+  .home-page main { grid-template-columns:240px minmax(0,1fr); gap:24px; }
+}
