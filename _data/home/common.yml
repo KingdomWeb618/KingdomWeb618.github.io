@@ -28,8 +28,8 @@
           "en": "Motion-constrained low-rank and sparse decomposition for infrared small moving-target detection. Motion-derived weights and trajectory confidence guide a streaming ADMM solver under dynamic backgrounds and impulsive noise.",
           "zh": "将运动约束引入低秩—稀疏分解，结合运动权重与轨迹置信先验，并通过流式 ADMM 求解，抑制动态背景残差与脉冲噪声，实现红外弱小运动目标检测。"
         },
-        "logo": "/images/logos/sam.jpg",
-        "logo_alt": "IEEE Sensor Array and Multichannel Signal Processing Workshop",
+        "logo": "/images/logos/sam.svg",
+        "logo_alt": "IEEE SAM 2026 conference wordmark",
         "logo_kind": "sam",
         "logo_url": "https://attend.ieee.org/sam-2026/",
         "pdf_url": "/files/papers/infrared-small-moving-target-detection-mc-rpca.pdf",
