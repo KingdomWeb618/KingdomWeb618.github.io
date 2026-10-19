@@ -146,6 +146,12 @@ body.home-page::before { content:""; position:fixed; right:14px; bottom:12px; wi
 @media(max-width:650px) { body.home-page::before { right:8px; bottom:8px; width:min(88vw, calc(35vw + 21vh)); opacity:.64; } .home-page h1, .home-page .page__title { font-size:1.75rem; } .home-page section>h2, .home-page .about-section-title { font-size:1.4rem; } }
 @media print { body.home-page::before { display:none; } }
 
+/* Paper downloads follow the existing ink-and-paper palette. */
+.home-page a.profile-paper-download { display:inline-flex; align-items:center; gap:7px; margin-top:6px; padding:7px 12px; border:1px solid var(--line-strong); border-radius:5px; background:var(--block-soft); color:var(--accent); font-size:.8rem; line-height:1.4; text-decoration:none; }
+.home-page a.profile-paper-download:hover { border-color:var(--accent); background:var(--block-intro); color:var(--accent-hover); text-decoration:none; }
+.home-page a.profile-paper-download:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+.home-page .profile-paper-download svg { display:block; flex-shrink:0; }
+
 /* Beyond Research: compact, wrapping hobby badges with matching ink icons. */
 .home-page .profile-interests { padding:20px 22px; border:1px solid var(--line); border-radius:7px; background:var(--block-soft); }
 .home-page .profile-hobby-row { display:flex; align-items:flex-start; flex-wrap:wrap; gap:10px 14px; }

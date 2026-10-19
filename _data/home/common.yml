@@ -14,7 +14,9 @@
         "logo": "/images/logos/ifac.png",
         "logo_alt": "IFAC — International Federation of Automatic Control",
         "logo_kind": "ifac",
-        "logo_url": "https://ifac-control.org/"
+        "logo_url": "https://ifac-control.org/",
+        "pdf_url": "/files/papers/online-order-estimation-binary-fir.pdf",
+        "pdf_filename": "online-order-estimation-binary-fir.pdf"
       },
       {
         "id": "mc-rpca",
@@ -29,7 +31,9 @@
         "logo": "/images/logos/sam.jpg",
         "logo_alt": "IEEE Sensor Array and Multichannel Signal Processing Workshop",
         "logo_kind": "sam",
-        "logo_url": "https://attend.ieee.org/sam-2026/"
+        "logo_url": "https://attend.ieee.org/sam-2026/",
+        "pdf_url": "/files/papers/infrared-small-moving-target-detection-mc-rpca.pdf",
+        "pdf_filename": "infrared-small-moving-target-detection-mc-rpca.pdf"
       }
     ]
   },

@@ -10,6 +10,12 @@
     <h3>{{ paper.title }}</h3>
     <p class="profile-authors">{{ paper.authors }}</p>
     <p class="profile-summary">{{ paper.summary[page.lang] | default: paper.summary.en }}</p>
+    {% if paper.pdf_url %}
+    <a class="profile-paper-download" href="{{ paper.pdf_url | relative_url }}" download="{{ paper.pdf_filename }}" aria-label="{% if page.lang == 'zh' %}下载论文 PDF{% else %}Download PDF{% endif %}: {{ paper.title | escape }}">
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg>
+      <span>{% if page.lang == 'zh' %}下载论文 PDF{% else %}Download PDF{% endif %}</span>
+    </a>
+    {% endif %}
     </div>
   </article>
 {% endfor %}
