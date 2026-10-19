@@ -1,0 +1,16 @@
+{% assign papers = site.data.home.common.publications.items %}
+<div class="profile-papers">
+{% for paper in papers %}
+  <article class="profile-paper" id="{{ paper.id }}">
+    <a class="profile-brand profile-brand--{{ paper.logo_kind }}" href="{{ paper.logo_url }}" aria-label="{{ paper.logo_alt }}">
+      <img src="{{ paper.logo | relative_url }}" alt="{{ paper.logo_alt }}" loading="lazy" decoding="async">
+    </a>
+    <div class="profile-record-body">
+    <span class="venue-badge venue-badge--conference">{{ paper.venue }} · {{ paper.year }}</span>
+    <h3>{{ paper.title }}</h3>
+    <p class="profile-authors">{{ paper.authors }}</p>
+    <p class="profile-summary">{{ paper.summary[page.lang] | default: paper.summary.en }}</p>
+    </div>
+  </article>
+{% endfor %}
+</div>

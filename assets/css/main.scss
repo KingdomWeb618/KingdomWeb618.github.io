@@ -35,6 +35,7 @@
 @import "sidebar";
 @import "home"; // before palette, so the dark-theme overrides still win ties
 @import "palette";
+@import "wenbin";
 
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";

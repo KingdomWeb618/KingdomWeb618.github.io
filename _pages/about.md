@@ -1,13 +1,13 @@
 ---
 layout: archive
 permalink: /
-title: "Greetings! This is Shuang Liang | 梁爽"
-excerpt: "About me"
+title: "Wenbin Wang | 王文斌"
+excerpt: "Personal academic homepage of Wenbin Wang"
 author_profile: true
 body_class: home-page
 lang_alt: "/zh/"
 lang: en
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---

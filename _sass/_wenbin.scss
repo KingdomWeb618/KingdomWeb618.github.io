@@ -1,0 +1,50 @@
+.home-page {
+  .profile-section { scroll-margin-top: 5rem; }
+  .profile-cv-note { display: block; margin-top: .55rem; color: var(--ink-subtle); font-size: .73rem; }
+  .profile-research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; }
+  .profile-research-card { overflow: hidden; padding: 0 !important; }
+  .profile-research-visual { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: #eef5fa; border-bottom: 1px solid var(--line-strong); }
+  .profile-research-copy { padding: .85rem 1rem 1rem; }
+  .profile-research-card, .profile-paper, .profile-education-card {
+    padding: 1rem 1.1rem; border: 1px solid var(--line-strong); border-radius: 8px;
+    background: var(--surface-raised); box-shadow: var(--shadow-card);
+  }
+  .profile-research-card h3, .profile-paper h3, .profile-education-card h3 { margin: .3rem 0 .6rem; font-size: 1.03rem; line-height: 1.45; }
+  .profile-research-card p, .profile-paper p, .profile-education-card p { margin: 0 0 .45rem; font-size: .88rem; line-height: 1.65; }
+  .profile-eyebrow { color: var(--ink-subtle); font-size: .7rem !important; font-weight: 700; letter-spacing: .055em; }
+  .profile-papers, .profile-education { display: grid; gap: .8rem; }
+  .profile-paper { border-left: 3px solid #3887a4; }
+  .profile-paper, .profile-education-card { display: grid; grid-template-columns: 152px minmax(0, 1fr); align-items: start; gap: 1.3rem; }
+  .profile-record-body { min-width: 0; }
+  .profile-brand { width: 152px; min-height: 100px; padding: 12px; display: flex; align-items: center; justify-content: center; border: 1px solid #e2e9ee; border-radius: 7px; background: #fff; text-decoration: none; overflow: hidden; }
+  .profile-brand img { display: block; max-width: 100%; max-height: 78px; width: auto; height: auto; object-fit: contain; }
+  .profile-brand--amss { background: #174967; border-color: #174967; }
+  .profile-brand--sam { padding: 0; min-height: 0; background: #073b4a; }
+  .profile-brand--sam img { width: 100%; max-height: none; }
+  .profile-paper .venue-badge { white-space: normal; }
+  .profile-authors { color: var(--ink-muted); }
+  .profile-summary { color: var(--ink-subtle); }
+  .profile-honors { list-style: none; margin: 0; padding: 0; }
+  .profile-honors li { display: flex; justify-content: space-between; gap: 1.5rem; padding: .65rem 0; border-bottom: 1px solid var(--line); font-size: .9rem; }
+  .profile-honors li span:last-child { flex-shrink: 0; color: var(--ink-subtle); font-size: .8rem; }
+  .degree-badge--amss .degree-badge__label { background: #23678b; color: white; }
+  .author__avatar img { object-fit: cover; aspect-ratio: 1 / 1; border-radius: 50%; }
+  @media (min-width: 561px) and (max-width: 900px) {
+    .profile-research-grid { grid-template-columns: 1fr; }
+    .profile-research-card { display: grid; grid-template-columns: 180px minmax(0, 1fr); align-items: stretch; }
+    .profile-research-visual { height: 100%; min-height: 160px; border-bottom: 0; border-right: 1px solid var(--line-strong); }
+  }
+  @media (max-width: 560px) {
+    .profile-research-grid { grid-template-columns: 1fr; }
+    .profile-research-visual { max-height: 240px; }
+    .profile-paper, .profile-education-card { grid-template-columns: 1fr; gap: .8rem; }
+    .profile-brand { width: 142px; min-height: 82px; padding: 10px; }
+    .profile-brand img { max-height: 62px; }
+    .profile-brand--sam { padding: 0; min-height: 0; }
+    .profile-brand--sam img { max-height: none; }
+    .profile-honors li { flex-direction: column; gap: .2rem; }
+    .profile-research-card, .profile-paper, .profile-education-card { padding: .85rem; }
+    .resource-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .about-tagline { overflow-wrap: anywhere; }
+  }
+}

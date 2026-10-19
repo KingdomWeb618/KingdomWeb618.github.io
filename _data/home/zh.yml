@@ -1,174 +1,153 @@
-# 中文首页文案，键结构与 en.yml 完全一致。
-# 论文、开源项目、GitHub 卡片等与语言无关的内容在 common.yml，改一处两边同时生效。
-# 人名一律保留英文原名：中文写法拿不准，写错比不写更失礼，需要时自行替换。
-
-# 侧栏文案。只在 lang: zh 的页面生效，未填的字段沿用 _config.yml 里的 author。
-profile:
-  name: "梁爽"
-  name_alt: "(Shuang Liang / Tim)"
-  bio: "你失去的每一样东西，都是你走过的一步。"
-  location: "中国香港特别行政区薄扶林"
-  employer: "香港大学"
-  labels:
-    find_me: "联系方式"
-    email: "邮箱"
-    googlescholar: "谷歌学术"
-    researchgate: "ResearchGate"
-    linkedin: "领英"
-    github: "Github"
-    cv: "简历"
-
-hero:
-  badges:
-    - { kind: whu, label: "本科", value: "武汉大学（2020–2024）" }
-    - { kind: hku, label: "博士", value: "香港大学（2024 至今）" }
-  badges_label: "学位"
-  tagline: '我的研究方向是<strong>计算机视觉</strong>、<strong>表征学习</strong>与<strong>生成模型</strong>。'
-  paragraphs:
-    - '🧑‍🎓 我是<a href="https://www.eee.hku.hk/">香港大学电机电子工程系</a>博士生，导师为 <a href="https://ece.hku.hk/people/h-wang/">Han Wang</a> 教授。'
-    - '我目前在腾讯 AI 游戏引擎部担任研究实习生，由 <a href="https://li-ronghui.github.io">Ronghui Li</a> 博士带教。'
-    - '🔬 来港大之前，我在<a href="https://physics.whu.edu.cn">武汉大学物理科学与技术学院</a>取得物理学学士学位。本科期间我在 <a href="https://genra.ai">Genra.ai</a> 度过了一段很愉快的时光，由 <a href="https://guozhang.mit.edu/guos-personal-home">Guo Zhang</a> 博士带教，并得到 <a href="https://www.yingcong.me">Yingcong Chen</a> 教授和 <a href="https://yyuanad.github.io">Yuan Yuan</a> 教授的指导，此后我们一直保持着紧密的科研合作。我也曾在 <a href="http://yuan.whu.edu.cn">Shengjun Yuan</a> 教授和 <a href="http://jszy.whu.edu.cn/zhangshunping/en/index.htm#">Shunping Zhang</a> 教授的指导下，接触过凝聚态物理与 AI for Science 方向的一些有意思的课题。'
-  contact:
-    email_label: "邮箱："
-    emails:
-      - tsliang2001@gmail.com
-      - sliang57@connect.hku.hk
-      - liangshuang@whu.edu.cn
-    email_separator: " 或 "
-    wechat: '也欢迎关注我的微信公众号 <strong>@Teemo.log</strong>，我在那里写一些日常记录和个人思考，内容均为中文。'
-
-news:
-  title: "最新动态"
-  aria_label: "最新动态"
-  more_label: "更早的动态"
-  # 从新到旧。items 直接显示，earlier 折叠在「更早的动态」里，
-  # 所以 items 里的日期必须都比 earlier 里的新。
-  items:
-    - date: "[10/2026]"
-      tag: "📃 新工作："
-      body: '我们的新工作 <a href="https://arxiv.org/pdf/2609.39635">SAGE</a> 已上线 arXiv！SAGE 发现目标数据特有的显著因子，并以此为条件，在保留目标特征的同时生成多样化样本。欢迎阅读！'
-    - date: "[10/2026]"
-      tag: "🎉 SDPose 入选 WACV 2027："
-      body: '论文 <a href="https://arxiv.org/abs/2509.24980">SDPose</a> 被 <a href="https://wacv.thecvf.com/">WACV 2027</a> 接收。'
-    - date: "[09/2026]"
-      tag: "🎉 CAFE 入选 NeurIPS 2026 E&D："
-      body: '论文 <a href="https://arxiv.org/abs/2605.09591">From Pixels to Concepts (CAFE)</a> 被 <a href="https://neurips.cc/Conferences/2026/CallForEvaluationsDatasets">NeurIPS 2026 Evaluations &amp; Datasets (E&amp;D)</a> Track 接收。'
-    - date: "[09/2026]"
-      tag: "🍻 IEDM '26："
-      body: "一篇论文被 IEDM 2026 接收。恭喜继昌、Xinyuan 和松琦！"
-    - date: "[08/2026]"
-      tag: "🎉 SDPose 亮相 ECCV 2026 Workshop："
-      body: '我们将在 ECCV 2026 <a href="https://human-motion-world-model.github.io/">Human Motion-Informed World Models and Socially Intelligent Action (HuMoWM)</a> workshop 上展示 SDPose（瑞典马尔默，non-archival）。如果你也在现场，欢迎来聊。'
-    - date: "[05/2026]"
-      tag: "📃 新工作："
-      body: '新论文 <a href="https://arxiv.org/abs/2605.09591">From Pixels to Concepts (CAFE)</a> 已挂上 arXiv。'
-    - date: "[04/2026]"
-      tag: "🚀 SDPose 被 Comfy Org 官方收录："
-      body: 'SDPose 现已被 ComfyUI 原生支持。可以看<a href="https://docs.comfy.org/tutorials/utility/pose-detection-sdpose">官方教程</a>、Comfy-Org 的 <a href="https://huggingface.co/Comfy-Org/SDPose">HF 模型</a>，也可以直接跑<a href="https://comfy.org/workflows/utility_sdpose_ood_image_to_pose-5489b3cf2ac1/">开箱即用的 OOD Image-to-Pose 工作流</a>。'
-    - date: "[10/2025]"
-      tag: "🎉 SDPose-OOD 被社区注意到了："
-      body: '感谢社区开发者为 SDPose-OOD 做了 ComfyUI 节点，让它更容易接入创作流程。🙌 传送门：<a href="https://github.com/judian17/ComfyUI-SDPose-OOD">ComfyUI Node SDPose-OOD</a>。'
-    - date: "[10/2025]"
-      tag: "🚀 SDPose 开源："
-      body: '代码与模型均已发布：<a href="https://github.com/T-S-Liang/SDPose-OOD">GitHub 仓库</a> | <a href="https://huggingface.co/teemosliang/SDPose-Body">HF 模型（Body）</a> | <a href="https://huggingface.co/teemosliang/SDPose-Wholebody">HF 模型（WholeBody）</a>。'
-  earlier:
-    - date: "[09/2025]"
-      tag: "🍻 IEDM '25："
-      body: "一篇论文被 IEDM 2025 接收。感谢 Han Wang 教授、Aoyang Zhang 教授和 Zhongrui Wang 教授的指导，也感谢松琦和继昌一路顺畅的合作。"
-    - date: "[09/2025]"
-      tag: "📃 新论文："
-      body: "新工作 <strong>SDPose</strong> 探索如何利用扩散先验做域外与鲁棒的姿态估计。非常兴奋能把这份工作分享出来，感谢 Guo Zhang 博士、Yingcong Chen 教授和 Yuan Yuan 教授的悉心指导。"
-    - date: "[01/2025]"
-      tag: "🍻 Optics Express '25："
-      body: "本科阶段的一篇工作被 Optics Express 接收。感谢张老师的悉心指导，也感谢雨泽和海牧的合作与支持。"
-    - date: "[10/2024]"
-      tag: "✈️ 入学香港大学："
-      body: "新的旅程开始了，我在香港大学电机电子工程系开始了研究型研究生阶段的学习。"
-    - date: "[06/2024]"
-      tag: "🎓 武汉大学毕业："
-      body: '获得武汉大学物理学理学学士学位。感谢本科期间 <a href="http://yuan.whu.edu.cn">Shengjun Yuan</a> 教授在计算物理与 AI4Sci 上的启蒙，以及 <a href="http://jszy.whu.edu.cn/zhangshunping/en/index.htm#">Shunping Zhang</a> 教授在实验光电子方向上的指导。'
-    - date: "[02/2024]"
-      tag: "🧑‍💻 实习@Rama Alpaca："
-      body: '春季学期开始在北京羊驼科技做 MLE 研究实习，由 MIT 的 <a href="https://guozhang.mit.edu/guos-personal-home">Guo Zhang</a> 博士带教，并与香港科技大学的 <a href="https://www.yingcong.me">Yingcong Chen</a> 教授、波士顿学院的 <a href="https://yyuanad.github.io">Yuan Yuan</a> 教授合作。'
-    - date: "[02/2023]"
-      tag: "🧑‍💻 科研@武汉大学 CPCS："
-      body: '这学期加入武汉大学 <a href="http://yuan.whu.edu.cn">Shengjun Yuan</a> 教授课题组担任研究助理。'
-    - date: "[02/2022]"
-      tag: "🔬 科研@武汉大学："
-      body: '加入武汉大学 <a href="http://jszy.whu.edu.cn/zhangshunping/en/index.htm#">Shunping Zhang</a> 教授的<a href="https://np.whu.edu.cn">课题组</a>，开始本科阶段的科研训练。'
-
-
-education:
-  title: "教育经历"
-  items:
-    - logo: "/images/hkulogo.png"
-      logo_alt: "香港大学校徽"
-      heading: '香港大学<a href="https://www.eee.hku.hk">电机电子工程系</a>'
-      lines:
-        - "电机电子工程博士研究生"
-        - "研究方向：计算机视觉、表征学习、生成模型"
-        - "2024 年 10 月 至今"
-    - logo: "/images/WHU.png"
-      logo_alt: "武汉大学校徽"
-      heading: '武汉大学<a href="http://physics.whu.edu.cn/">物理科学与技术学院</a>'
-      lines:
-        - "物理学理学学士"
-        - "研究方向：凝聚态物理实验、面向计算物理的人工智能"
-        - "毕业论文：基于深度学习构建紧束缚模型"
-        - "2020 年 9 月 - 2024 年 6 月"
-
-industry:
-  title: "工业界经历"
-  items:
-    - logo: "/images/tencent-logo.png"
-      logo_alt: "腾讯 logo"
-      heading: "腾讯，AI 游戏引擎部"
-      lines:
-        - "研究实习生"
-        - "课题：三维动作与视频生成"
-        - '带教：<a href="https://li-ronghui.github.io">Ronghui Li</a>。'
-        - "2026 年 8 月 至今"
-    - logo: "/images/genra-logo.png"
-      logo_alt: "Genra.ai logo"
-      heading: 'Rama Alpaca（<a href="https://genra.ai">Genra.ai</a>）'
-      lines:
-        - "研究实习生"
-        - "课题：动画角色的姿态估计"
-        - '带教：<a href="https://guozhang.mit.edu/guos-personal-home">Guo Zhang</a> 博士。指导：<a href="https://yyuanad.github.io">Yuan Yuan</a> 教授与 <a href="https://www.yingcong.me">Yingcong Chen</a> 教授。'
-        - "2024 年 2 月 - 2024 年 8 月"
-
-publications:
-  title: "代表性论文"
-  lead: '这里列出第一作者与共同第一作者的工作。完整列表见<a href="/publications">论文</a>页面或我的 <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=L236mPUAAAAJ">Google Scholar</a>。<br>† 表示同等贡献，* 表示通讯作者。'
-
-projects:
-  title: "代表性开源项目"
-  github_label: "Github"
-  stats_title: "Github 统计"
-
-honors:
-  title: "获奖与荣誉"
-  items:
-    - text: "<i>武汉大学优秀本科毕业论文</i>（物理科学与技术学院前 5%）。"
-      year: "2024"
-    - text: "<i>武汉大学甲等奖学金</i>（学业成绩前 5%）。"
-      year: "2021"
-
-teaching:
-  title: "教学与评审"
-  items:
-    - text: "<b>助教</b>，ELEC3644 Advanced Mobile Apps Development，香港大学"
-      when: "2026 秋"
-    - text: "<b>助教</b>，ENGG1330 Computer Programming I，香港大学"
-      when: "2025 春"
-    - text: "<b>助教</b>，ELEC3644 Advanced Mobile Apps Development，香港大学"
-      when: "2025 秋"
-
-facts:
-  title: "关于我的一些小事"
-  items:
-    - "我叫梁爽，「爽」取的是我出生那个季节的天气，凉爽舒服。这个名字听上去偏女生，所以没见面之前常常有人以为我是女孩子。我更常用的名字是 Tim，是英文名，不在身份证上。"
-    - "童年和少年时代在黄河边度过，大学四年在长江边，现在则在珠江边工作。三条河，三段人生，某种意义上也算顺流而下。"
-    - "音乐占据了我大部分空闲时间。乡村、日摇、华语民谣，基本上以吉他为核心的都听，流行、嘻哈和电子也来者不拒。我是 Taylor Swift、Adele、Billie Eilish 和 Beyoncé 的粉丝，随时可以聊音乐。"
-    - "顺理成章地，我也是个动画爱好者，而且口味和歌单如出一辙：《BanG Dream!》《孤独摇滚！》《吹响吧！上低音号》，讲的都是那些只有靠乐器才说得出口的人。"
-    - "本科在武大时我很喜欢中文辩论，做过物理学院辩论队（2020 级）队长，也牵头办过院里的「寻理杯」辩论赛。"
+{
+  "profile": {
+    "name": "王文斌",
+    "name_alt": "Wenbin Wang",
+    "bio": "用数学理解问题，构建可靠的智能系统。",
+    "location": "中国 · 北京",
+    "employer": "中国科学院数学与系统科学研究院",
+    "labels": {
+      "find_me": "联系方式",
+      "email": "邮箱",
+      "github": "GitHub",
+      "cv": "英文简历"
+    }
+  },
+  "hero": {
+    "badges_label": "教育背景",
+    "badges": [
+      {
+        "kind": "amss",
+        "label": "研究生",
+        "value": "中科院数学院 · 2024 至今"
+      },
+      {
+        "kind": "whu",
+        "label": "本科",
+        "value": "武汉大学 · 2020–2024"
+      }
+    ],
+    "tagline": "从不完美的观测中，提取可靠的信息。",
+    "paragraphs": [
+      "我是<a href=\"https://www.amss.ac.cn/\">中国科学院数学与系统科学研究院</a>运筹学与控制论专业博士研究生，2024 年进入硕博衔接培养，2026 年进入博士阶段。",
+      "我的研究涉及<strong>统计估计</strong>、<strong>系统辨识</strong>、<strong>优化</strong>与<strong>智能感知</strong>。我关注如何将数学结构与数据结合，在噪声、量化和复杂环境下构建鲁棒、可解释且有理论依据的算法。",
+      "2024 年，我于武汉大学数学与统计学院获得数学与应用数学理学学士学位。"
+    ],
+    "contact_label": "联系我"
+  },
+  "research": {
+    "title": "研究方向",
+    "intro": "我关心两个相互关联的问题：不完美的观测中包含哪些可学习的信息，以及如何将这些信息转化为可靠的算法？",
+    "items": [
+      {
+        "label": "01 / 动态系统",
+        "title": "量化观测下的在线学习",
+        "text": "研究二值、含噪观测下的系统阶次与参数估计，设计递推算法，并分析其一致性与适用条件。",
+        "image": "/images/research/quantized-observations.png",
+        "image_alt": "连续信号、二值观测与递推推断的概念示意图。"
+      },
+      {
+        "label": "02 / 智能感知",
+        "title": "复杂场景中的弱信号恢复",
+        "text": "面向低信噪比和动态背景下的红外弱小运动目标检测，结合运动先验与低秩—稀疏建模。",
+        "image": "/images/research/weak-target-perception.png",
+        "image_alt": "从多帧复杂背景中提取弱小运动点目标的概念示意图。"
+      },
+      {
+        "label": "03 / 数学方法",
+        "title": "模型与数据协同",
+        "text": "结合结构先验、统计推断、优化与数据自适应方法，探索可靠、可解释的智能系统算法。",
+        "image": "/images/research/model-data-collaboration.png",
+        "image_alt": "数学结构与观测数据融合形成统一表示的概念示意图。"
+      }
+    ]
+  },
+  "publications": {
+    "title": "代表论文",
+    "lead": "",
+    "details": "研究简介"
+  },
+  "education": {
+    "title": "教育经历",
+    "items": [
+      {
+        "heading": "中国科学院数学与系统科学研究院",
+        "degree": "运筹学与控制论 · 硕博衔接培养",
+        "date": "2024.09—至今",
+        "note": "2026 年进入博士阶段。研究生训练涵盖优化、概率统计、动态系统、控制与系统估计。",
+        "logo": "/images/logos/amss.png",
+        "logo_alt": "Academy of Mathematics and Systems Science, CAS",
+        "logo_kind": "amss",
+        "logo_url": "https://www.amss.ac.cn/"
+      },
+      {
+        "heading": "武汉大学 · 数学与统计学院",
+        "degree": "数学与应用数学 · 理学学士",
+        "date": "2020.09—2024.06",
+        "note": "GPA：3.77/4.00 · 专业排名：5/59。",
+        "logo": "/images/logos/whu.png",
+        "logo_alt": "Wuhan University",
+        "logo_kind": "whu",
+        "logo_url": "https://www.whu.edu.cn/"
+      }
+    ]
+  },
+  "skills": {
+    "title": "方法与工具",
+    "items": [
+      "统计估计、系统辨识、随机过程、数值与凸优化、稀疏与低秩建模。",
+      "MATLAB、Python 科学计算与 LaTeX；具备 C/C++ 和 OpenCV 基础。"
+    ]
+  },
+  "honors": {
+    "title": "荣誉与奖励",
+    "items": [
+      {
+        "text": "第二届自抗扰控制设计大赛二等奖",
+        "year": "2026"
+      },
+      {
+        "text": "中国科学院数学与系统科学研究院优秀学生干部",
+        "year": "2025"
+      },
+      {
+        "text": "中国科学院数学与系统科学研究院优秀共青团员",
+        "year": "2025"
+      },
+      {
+        "text": "全国大学生数学竞赛全国二等奖",
+        "year": "2023"
+      },
+      {
+        "text": "全国大学生数学竞赛湖北赛区一等奖",
+        "year": "2023"
+      },
+      {
+        "text": "国家励志奖学金",
+        "year": "2021–2023"
+      },
+      {
+        "text": "武汉大学优秀学生",
+        "year": "2021–2023"
+      },
+      {
+        "text": "武汉大学数学与统计学院丙等奖学金",
+        "year": "2021–2023"
+      },
+      {
+        "text": "全国大学生数学竞赛湖北赛区三等奖",
+        "year": "2022"
+      }
+    ]
+  },
+  "facts": {
+    "title": "科研之外",
+    "items": [
+      "我喜欢摄影、羽毛球、乒乓球，也喜欢了解新技术。",
+      "我重视好奇心、清晰的思考，以及能够连接数学严谨性与实际问题的研究。"
+    ]
+  },
+  "contact": {
+    "title": "联系方式",
+    "text": "欢迎围绕系统辨识、可靠感知以及不完美观测下的学习问题交流。"
+  }
+}

@@ -1,9 +1,8 @@
 ---
 layout: archive
 permalink: /zh/
-title: "梁爽 | Shuang Liang"
-excerpt: "个人主页"
-sitemap: false
+title: "王文斌 | Wenbin Wang"
+excerpt: "王文斌的个人学术主页"
 author_profile: true
 body_class: home-page
 lang_alt: "/"

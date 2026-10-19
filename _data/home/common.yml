@@ -1,165 +1,36 @@
-# Language-neutral homepage content: paper entries, open-source projects and
-# GitHub cards. Prose that needs translating lives in en.yml / zh.yml instead,
-# so adding a paper here updates both language versions at once.
-#
-# Resource pill icons:
-#   pdf              -> the red PDF mark
-#   window           -> Font Awesome window glyph (project pages)
-#   fa-users, ...    -> any other Font Awesome glyph, by its icon name
-#   /images/foo.svg  -> a local icon file
-#   anything else    -> a Simple Icons slug, fetched from cdn.simpleicons.org
-
-publications:
-  items:
-    - badges:
-        - text: "Preprint 2026"
-          kind: preprint
-      title: "SAGE: Salient Factor Discovery and Generation with Visual Foundation Representations"
-      authors: '<u>Shuang Liang</u>†, Lejun Liao†, Shiyuan Zhang†, Max C. Zhang, Xiaolong Luo, Han Wang, Stefano Anzellotti and Yuan Yuan*.'
-      links:
-        - { label: "PDF", url: "/files/SAGE.pdf", icon: pdf }
-        - { label: "Code", url: "https://github.com/T-S-Liang/SAGE", icon: github, icon_alt: "GitHub logo" }
-        - { label: "arXiv", url: "https://arxiv.org/pdf/2609.39635", icon: arxiv, icon_alt: "arXiv logo" }
-      media:
-        kind: image
-        href: "/images/SAGE-overview.png"
-        src: "/images/SAGE-overview-690.webp"
-        width: 690
-        height: 248
-        loading: lazy
-        alt: "SAGE overview: common and salient factor decomposition, high-fidelity reconstruction, subtype discovery, and salient-conditioned generation"
-
-    - badges:
-        - text: "NeurIPS 2026 E&D"
-          kind: conference
-      title: "From Pixels to Concepts: Do Segmentation Models Understand What They Segment?"
-      authors: '<u>Shuang Liang</u>†, Zeqing Wang†, Yuxian Li†, Xihui Liu and Han Wang*.'
-      links:
-        - { label: "PDF", url: "/files/CAFE.pdf", icon: pdf }
-        - { label: "Project Page", url: "https://tsliang.top/CAFE/", icon: window }
-        - { label: "Code", url: "https://github.com/T-S-Liang/CAFE", icon: github, icon_alt: "GitHub logo" }
-        - { label: "Dataset", url: "https://huggingface.co/datasets/teemosliang/CAFE", icon: huggingface, icon_alt: "Hugging Face logo" }
-        - { label: "arXiv", url: "https://arxiv.org/abs/2605.09591", icon: arxiv, icon_alt: "arXiv logo" }
-      media:
-        kind: image
-        href: "https://tsliang.top/CAFE/"
-        src: "https://tsliang.top/CAFE/static/images/more_cases.jpg"
-        alt: "Diverse CAFE test cases across SM, CC, and OC"
-
-    - badges:
-        - text: "IEDM 2025"
-      title: "A Monolithic Reconfigurable RRAM CIM Array Integrating PUF, TRNG, and a Lightweight Block Cipher for Secure Edge AI"
-      authors: 'Songqi Wang†, <u>Shuang Liang†</u>, Shaonan Wu†, Zhiqi Yang, Jichang Yang, Xinyuan Zhang, Yi Li, Yuhao Zhang*, Zhongrui Wang*, Aoyang Zhang* and Han Wang*.'
-      links:
-        - label: "Google Scholar"
-          url: "https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=L236mPUAAAAJ&citation_for_view=L236mPUAAAAJ:9yKSN-GCB0IC"
-          icon: googlescholar
-          icon_alt: "Google Scholar logo"
-          blank: true
-      media:
-        kind: image
-        href: "/images/IEDM_SCIM.jpg"
-        src: "/images/IEDM_SCIM.jpg"
-
-    - badges:
-        - text: "WACV 2027"
-          kind: conference
-        - text: "ECCV Workshop 2026"
-          kind: workshop
-      title: "SDPose: Exploiting Diffusion Priors for Out-of-Domain and Robust Pose Estimation"
-      authors: '<u>Shuang Liang</u>, Jing He, Lejun Liao, Chuanmeizhi Wang, Guo Zhang, Yingcong Chen and Yuan Yuan*.'
-      links:
-        - { label: "PDF", url: "/files/SDPose.pdf", icon: pdf }
-        - { label: "Code", url: "https://github.com/T-S-Liang/SDPose-OOD", icon: github, icon_alt: "GitHub logo" }
-        - { label: "arXiv", url: "https://arxiv.org/abs/2509.24980", icon: arxiv, icon_alt: "arXiv logo" }
-        - { label: "Project Page", url: "https://t-s-liang.github.io/SDPose", icon: window }
-        - { label: "Demo", url: "https://huggingface.co/spaces/teemosliang/SDPose", icon: huggingface, icon_alt: "Hugging Face logo" }
-        - { label: "ComfyUI", url: "https://docs.comfy.org/tutorials/utility/pose-detection-sdpose", icon: "/images/comfy-symbol.svg", icon_alt: "ComfyUI icon" }
-        - { label: "ECCV 2026 HuMoWM Workshop", url: "https://human-motion-world-model.github.io/", icon: fa-users }
-        - {
-            label: "HF downloads / mo",
-            url: "https://huggingface.co/Comfy-Org/SDPose",
-            mark_text: "81.8k",
-            mark_kind: downloads,
-            hf_model: "Comfy-Org/SDPose",
-            title: "Comfy-Org/SDPose · downloads last month on Hugging Face",
-            blank: true
-          }
-        - {
-            label: "Aggregated downloads",
-            url: "https://modelpulse.ifsp.dev/model/teemosliang/SDPose-Wholebody",
-            mark_text: "295.8k",
-            mark_kind: downloads,
-            pulse_model: "teemosliang/SDPose-Wholebody",
-            pulse_field: "fam_all",
-            title: "SDPose family · aggregated downloads all time via Model Pulse",
-            blank: true
-          }
-      media:
-        kind: grid
-        items:
-          - { src: "/images/SDPose_1.gif", alt: "SDPose gif 1" }
-          - { src: "/images/SDPose_2.gif", alt: "SDPose gif 2" }
-          - { src: "/images/SDPose_3.gif", alt: "SDPose gif 3" }
-          - { src: "/images/SDPose_4.gif", alt: "SDPose gif 4" }
-
-    - badges:
-        - text: "Opt. Express 2025"
-          note: "JCR Q1, CAS Q2"
-          kind: journal
-      title: 'Saturable Absorption of Few-layer $\mathrm{WS_{2}}$ and $\mathrm{WSe_{2}}$ at Exciton Resonance'
-      authors: '<u>Shuang Liang</u>, Yuze Lu, Haimu Liu, Xiaohe Shang, Jiamin Ji, Rongguang Du, Yiling Yu and Shunping Zhang*.'
-      links:
-        - { label: "PDF", url: "/files/OE25.pdf", icon: pdf }
-        - { label: "Optica", url: "https://doi.org/10.1364/OE.539834", icon: "/images/optica-symbol.svg", icon_alt: "Optica icon" }
-      media:
-        kind: image
-        href: "/images/SA.png"
-        src: "/images/SA.png"
-
-projects:
-  github_url: "https://github.com/t-s-liang"
-  items:
-    - logo: "/images/SDPose-logo-300.webp"
-      logo_alt: "SDPose logo"
-      title: "SDPose: Exploiting Diffusion Priors for Out-of-Domain and Robust Pose Estimation"
-      url: "https://github.com/t-s-liang/SDPose-OOD"
-      stats:
-        - href: "https://github.com/t-s-liang/SDPose-OOD/stargazers"
-          src: "https://img.shields.io/github/stars/t-s-liang/SDPose-OOD?style=social&label=Repo"
-          alt: "Stars of the SDPose-OOD repository"
-        - href: "https://github.com/t-s-liang/SDPose-OOD/network/members"
-          src: "https://img.shields.io/github/forks/t-s-liang/SDPose-OOD?style=social&label=Fork"
-          alt: "Forks of the SDPose-OOD repository"
-        - href: "https://github.com/judian17/ComfyUI-SDPose-OOD/stargazers"
-          src: "https://img.shields.io/github/stars/judian17/ComfyUI-SDPose-OOD?style=social&label=ComfyUI%20Node"
-          alt: "Stars of the ComfyUI-SDPose-OOD community node"
-      links:
-        - { label: "Code", url: "https://github.com/T-S-Liang/SDPose-OOD", icon: github, icon_alt: "GitHub logo" }
-        - { label: "PDF", url: "/files/SDPose.pdf", icon: pdf }
-        - { label: "arXiv", url: "https://arxiv.org/abs/2509.24980", icon: arxiv, icon_alt: "arXiv logo" }
-        - { label: "Project Page", url: "https://t-s-liang.github.io/SDPose", icon: window }
-        - { label: "Demo", url: "https://huggingface.co/spaces/teemosliang/SDPose", icon: huggingface, icon_alt: "Hugging Face logo" }
-        - { label: "ComfyUI", url: "https://docs.comfy.org/tutorials/utility/pose-detection-sdpose", icon: "/images/comfy-symbol.svg", icon_alt: "ComfyUI icon" }
-
-    - logo: "/images/CAFE-logo-300.webp"
-      logo_alt: "CAFE logo"
-      title: "CAFE: Counterfactual Attribute Factuality Evaluation"
-      url: "https://github.com/T-S-Liang/CAFE"
-      stats:
-        - href: "https://github.com/T-S-Liang/CAFE/stargazers"
-          src: "https://img.shields.io/github/stars/T-S-Liang/CAFE?style=social&label=Repo"
-          alt: "Stars of the CAFE repository"
-        - href: "https://github.com/T-S-Liang/CAFE/network/members"
-          src: "https://img.shields.io/github/forks/T-S-Liang/CAFE?style=social&label=Fork"
-          alt: "Forks of the CAFE repository"
-      links:
-        - { label: "PDF", url: "/files/CAFE.pdf", icon: pdf }
-        - { label: "Project Page", url: "https://tsliang.top/CAFE/", icon: window }
-        - { label: "Code", url: "https://github.com/T-S-Liang/CAFE", icon: github, icon_alt: "GitHub logo" }
-        - { label: "Dataset", url: "https://huggingface.co/datasets/teemosliang/CAFE", icon: huggingface, icon_alt: "Hugging Face logo" }
-        - { label: "arXiv", url: "https://arxiv.org/abs/2605.09591", icon: arxiv, icon_alt: "arXiv logo" }
-
-github_stats:
-  - "https://raw.githubusercontent.com/T-S-Liang/github-stats/master/generated/overview.svg"
-  - "https://raw.githubusercontent.com/T-S-Liang/github-stats/master/generated/languages.svg"
+{
+  "publications": {
+    "items": [
+      {
+        "id": "binary-fir",
+        "title": "Online Order Estimation for Binary-valued FIR System With Colored Noise",
+        "authors": "<strong>Wenbin Wang</strong>, Jian Guo, and Yanlong Zhao.",
+        "venue": "23rd IFAC World Congress",
+        "year": 2026,
+        "summary": {
+          "en": "Online order estimation for binary-valued FIR systems with moving-average colored noise. A recursive criterion exploits autocorrelation-support structure, with almost-sure consistency and joint order–parameter estimation in the Gaussian case.",
+          "zh": "面向移动平均有色噪声驱动的二值 FIR 系统，利用自相关支撑结构构造递推阶次准则，证明几乎处处一致性，并在高斯情形下研究阶次与参数的联合在线估计。"
+        },
+        "logo": "/images/logos/ifac.png",
+        "logo_alt": "IFAC — International Federation of Automatic Control",
+        "logo_kind": "ifac",
+        "logo_url": "https://ifac-control.org/"
+      },
+      {
+        "id": "mc-rpca",
+        "title": "Infrared Small Moving Target Detection via Motion Constrained Robust Principal Component Analysis",
+        "authors": "<strong>Wenbin Wang</strong>, Mingjie Shao, Wenchao Xue, Hui Xie, Haibin Sun, and Yanlong Zhao.",
+        "venue": "14th IEEE Sensor Array and Multichannel Signal Processing Workshop (SAM)",
+        "year": 2026,
+        "summary": {
+          "en": "Motion-constrained low-rank and sparse decomposition for infrared small moving-target detection. Motion-derived weights and trajectory confidence guide a streaming ADMM solver under dynamic backgrounds and impulsive noise.",
+          "zh": "将运动约束引入低秩—稀疏分解，结合运动权重与轨迹置信先验，并通过流式 ADMM 求解，抑制动态背景残差与脉冲噪声，实现红外弱小运动目标检测。"
+        },
+        "logo": "/images/logos/sam.jpg",
+        "logo_alt": "IEEE Sensor Array and Multichannel Signal Processing Workshop",
+        "logo_kind": "sam",
+        "logo_url": "https://attend.ieee.org/sam-2026/"
+      }
+    ]
+  }
+}

@@ -9,14 +9,14 @@
 locale                   : "en-US"
 # Shows the language switch in the masthead and the hreflang pairs in <head>.
 # The /zh/ page is still built either way, just unlinked while this is false.
-lang_switch              : false
-title                    : "Shuang Liang"
+lang_switch              : true
+title                    : "Wenbin Wang | 王文斌"
 title_separator          : "-"
-name                     : &name "Shuang Liang"
-description              : &description "This is my homepage, welcome!"
-url                      : "https://t-s-liang.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Wenbin Wang"
+description              : &description "Wenbin Wang — statistical estimation, system identification, and reliable intelligent perception."
+url                      : "https://kingdomweb618.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "t-s-liang/t-s-liang.github.io"
+repository               : "KingdomWeb618/KingdomWeb618.github.io"
 teaser                   : ""  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : # true, false (default)
 words_per_minute         : 160
@@ -76,52 +76,24 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # false (default), "google", "google-universal", "custom"
   google:
   tracking_id          :
 
 
 # Site Author
 author:
-  name             : "Shuang LIANG"
-  name_alt         : "(梁爽/Tim)"
-  avatar           : "profile-600.webp"
-  bio              : "Prior first."
-  location         : "Pok Fu Lam, Hong Kong SAR, China"
-  employer         : "The University of H. K."
-  employer_site    : "https://www.hku.hk"
+  name             : "Wenbin Wang"
+  name_alt         : "王文斌"
+  avatar           : "wenbin-reading-avatar.png"
+  bio              : "Mathematics for reliable intelligent systems."
+  location         : "Beijing, China"
+  employer         : "AMSS, Chinese Academy of Sciences"
+  employer_site    : "https://www.amss.ac.cn/"
   cv               : ""
-  pubmed           :
-  googlescholar    : "https://scholar.google.com.hk/citations?hl=zh-CN&user=L236mPUAAAAJ"
-  email            : "sliang57@connect.hku.hk"
-  researchgate     : "https://www.researchgate.net/profile/Shuang-Liang-107"
-  uri              : "https://tsliang.top/"
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           : "T-S-Liang"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         : "shuang-liang-789395309"
-  orcid            :
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : 
-  vine             :
-  weibo            : 
-  xing             :
-  youtube          :
-  wikipedia        :
-  zhihu            :
+  email            : "wangwenbin@amss.ac.cn"
+  uri              : "https://kingdomweb618.github.io/"
+  github           : "KingdomWeb618"
 
 
 # Reading Files
@@ -130,6 +102,10 @@ include:
   - _pages
   - files
 exclude:
+  - _posts
+  - _drafts
+  - talkmap
+  - markdown_generator
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -237,7 +213,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
