@@ -69,9 +69,19 @@
   </ul>
 </section>
 
-<section class="profile-section">
+<section id="beyond-research" class="profile-section">
   <h2 class="about-section-title">{{ t.facts.title }}</h2>
-  <ul class="facts-list">{% for fact in t.facts.items %}<li>{{ fact }}</li>{% endfor %}</ul>
+  <div class="profile-interests">
+    <div class="profile-hobby-row">
+      <span class="profile-hobby-label">{{ t.facts.hobbies_label }}{% if page.lang == 'zh' %}：{% else %}:{% endif %}</span>
+      <ul class="profile-hobby-list" aria-label="{{ t.facts.hobbies_label }}">
+      {% for hobby in t.facts.hobbies %}
+        <li>{% include home/hobby-icon.html icon=hobby.icon %}<span>{{ hobby.label }}</span></li>
+      {% endfor %}
+      </ul>
+    </div>
+    <p class="profile-interests-text">{{ t.facts.text }}</p>
+  </div>
 </section>
 
 <section id="contact" class="profile-section">

@@ -32,5 +32,12 @@
         "logo_url": "https://attend.ieee.org/sam-2026/"
       }
     ]
+  },
+  "hobby_icons": {
+    "table_tennis": "<path d=\"m12.5 14 6.3 6.3a1.5 1.5 0 0 0 2.1-2.1L14.6 12\"/><path d=\"M13.8 4.2a6.8 6.8 0 1 1-9.6 9.6 6.8 6.8 0 0 1 9.6-9.6Z\"/><path d=\"m4.2 13.8 9.6-9.6\"/><circle cx=\"19\" cy=\"5\" r=\"2.1\"/>",
+    "badminton": "<path d=\"m5 3 4 13h6l4-13-7 3-7-3Z\"/><path d=\"m8.5 4.5 2.5 11.5m4.5-11.5L13 16M9 16h6v2a3 3 0 0 1-6 0v-2Z\"/>",
+    "billiards": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><circle cx=\"12\" cy=\"12\" r=\"4.7\"/><ellipse cx=\"12\" cy=\"10.4\" rx=\"1.4\" ry=\"1.2\"/><ellipse cx=\"12\" cy=\"13.1\" rx=\"1.7\" ry=\"1.5\"/>",
+    "chinese_chess": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><circle cx=\"12\" cy=\"12\" r=\"6.8\" stroke-width=\".8\"/><text x=\"12\" y=\"16.2\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\" font-size=\"12.5\" font-family=\"KaiTi,STKaiti,serif\">帥</text>",
+    "calligraphy": "<path d=\"m10 13 7.5-9a1.8 1.8 0 0 1 2.6 2.5L12 15\"/><path d=\"m10 13 2 2M9 14c-4 .3-2.4 4-6 6 5 1.2 9-1.7 8-5\"/><path d=\"M16 20h5\"/>"
   }
 }

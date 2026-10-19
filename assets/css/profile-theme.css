@@ -146,6 +146,21 @@ body.home-page::before { content:""; position:fixed; right:14px; bottom:12px; wi
 @media(max-width:650px) { body.home-page::before { right:8px; bottom:8px; width:min(88vw, calc(35vw + 21vh)); opacity:.64; } .home-page h1, .home-page .page__title { font-size:1.75rem; } .home-page section>h2, .home-page .about-section-title { font-size:1.4rem; } }
 @media print { body.home-page::before { display:none; } }
 
+/* Beyond Research: compact, wrapping hobby badges with matching ink icons. */
+.home-page .profile-interests { padding:20px 22px; border:1px solid var(--line); border-radius:7px; background:var(--block-soft); }
+.home-page .profile-hobby-row { display:flex; align-items:flex-start; flex-wrap:wrap; gap:10px 14px; }
+.home-page .profile-hobby-label { flex-shrink:0; padding:8px 0; font-size:.9rem; color:var(--ink-muted); }
+.home-page .profile-hobby-list { display:flex; flex:1 1 220px; flex-wrap:wrap; gap:10px; min-width:0; list-style:none; padding:0; margin:0; }
+.home-page .profile-hobby-list li { display:inline-flex; align-items:center; gap:8px; margin:0; padding:7px 13px; border:1px solid var(--line-strong); border-radius:999px; background:var(--surface-raised); color:var(--ink); font-size:.9rem; line-height:1.5; }
+.home-page .profile-hobby-icon { display:block; flex-shrink:0; width:23px; height:23px; color:var(--accent); }
+.home-page p.profile-interests-text { margin:16px 0 0; color:var(--ink-muted); font-size:.9rem; line-height:1.85; }
+@media (max-width:560px) {
+  .home-page .profile-interests { padding:16px; }
+  .home-page .profile-hobby-row { gap:6px 10px; }
+  .home-page .profile-hobby-list { gap:8px; }
+  .home-page .profile-hobby-list li { padding:6px 10px; }
+}
+
 /* Give the profile card room for the institution name and wrap long links. */
 .home-page .sidebar > div[itemscope] { box-sizing:border-box; width:100%; }
 .home-page .author__urls li { white-space:normal; overflow-wrap:anywhere; }

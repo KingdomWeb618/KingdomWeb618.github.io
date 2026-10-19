@@ -133,10 +133,30 @@
   },
   "facts": {
     "title": "Beyond Research",
-    "items": [
-      "I enjoy photography, badminton, table tennis, and exploring emerging technologies.",
-      "I value curiosity, clear thinking, and research that connects mathematical rigor with practical impact."
-    ]
+    "hobbies_label": "Hobbies",
+    "hobbies": [
+      {
+        "icon": "table_tennis",
+        "label": "Table tennis"
+      },
+      {
+        "icon": "badminton",
+        "label": "Badminton"
+      },
+      {
+        "icon": "billiards",
+        "label": "Billiards"
+      },
+      {
+        "icon": "chinese_chess",
+        "label": "Chinese chess"
+      },
+      {
+        "icon": "calligraphy",
+        "label": "Calligraphy"
+      }
+    ],
+    "text": "I value curiosity, clear thinking, and research that connects mathematical rigor with real-world problems. I also enjoy learning about new technologies."
   },
   "contact": {
     "title": "Contact",

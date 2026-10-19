@@ -141,10 +141,30 @@
   },
   "facts": {
     "title": "科研之外",
-    "items": [
-      "我喜欢摄影、羽毛球、乒乓球，也喜欢了解新技术。",
-      "我重视好奇心、清晰的思考，以及能够连接数学严谨性与实际问题的研究。"
-    ]
+    "hobbies_label": "爱好",
+    "hobbies": [
+      {
+        "icon": "table_tennis",
+        "label": "乒乓球"
+      },
+      {
+        "icon": "badminton",
+        "label": "羽毛球"
+      },
+      {
+        "icon": "billiards",
+        "label": "台球"
+      },
+      {
+        "icon": "chinese_chess",
+        "label": "中国象棋"
+      },
+      {
+        "icon": "calligraphy",
+        "label": "书法"
+      }
+    ],
+    "text": "我重视好奇心、清晰的思考，以及能够连接数学严谨性与实际问题的研究。喜欢了解新技术。"
   },
   "contact": {
     "title": "联系方式",
